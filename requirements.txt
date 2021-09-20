@@ -37,6 +37,7 @@ redis==3.5.3
 s3transfer==0.4.2
 six==1.12.0
 sqlparse==0.3.0
+setuptools==45.0.0
 Twisted==19.7.0
 txaio==18.8.1
 urllib3==1.26.4
