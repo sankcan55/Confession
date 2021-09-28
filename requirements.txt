@@ -41,5 +41,4 @@ Twisted==19.7.0
 txaio==18.8.1
 urllib3==1.26.4
 whitenoise==4.1.4
-zope.interface==4.6.0
 setuptools==45.0.0
