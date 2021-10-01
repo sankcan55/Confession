@@ -8,12 +8,13 @@ def getFeed(request):
     for feed in feeds:
         result.append(feed)
 
-    return JsonResponse({'result': result}, safe=False)
+    return JsonResponse(result, safe=False)
 
 
 def postFeed(request):
     name = request.GET.get('name')
-    content = request.GET.get('content')
-    feed = Feed(name=name, content=content)
+    title = request.GET.get('title')
+    message = request.GET.get('message')
+    feed = Feed(name=name, title=title, message=message)
     feed.save()
     return JsonResponse({}, safe=False)
